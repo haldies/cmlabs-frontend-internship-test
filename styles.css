@@ -1,0 +1,355 @@
+:root {
+    --font-size-small: 12px;
+    --font-size-medium: 18px;
+    --font-size-large: 28px;
+    --font-size-xlarge: 48px;
+    --font-size-xxlarge: 56px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* <------style global---------> */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.margin-mobile {
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+
+
+/* <---------penutup style global----------> */
+body {
+    font-family: 'Source Serif 4', serif;
+}
+
+header {
+    padding: 20px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+
+}
+
+
+nav ul {
+    width: 500px;
+    display: flex;
+    margin-bottom: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+    list-style: none;
+    font-size: var(--font-size-medium);
+    font-weight: bold;
+}
+
+.nav__link {
+    text-decoration: none;
+
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+
+.nav__list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    transition: transform 5s ease-in-out;
+    transform: translateY(-100%);
+}
+
+.nav__item {
+    padding: 10px;
+    text-align: center;
+}
+
+.hamburger-menu {
+    display: block;
+}
+
+.nav__list.show {
+    display: flex;
+    transform: translateY(0);
+}
+
+
+.judul-home__MealApp {
+    margin: 0 20px;
+}
+
+.judul-home__MealApp h1 {
+    font-size: var(--font-size-xlarge);
+
+}
+
+.judul-home__MealApp p {
+    width: 80%;
+    font-size: var(--font-size-medium);
+
+}
+
+.category-section {
+    margin-top: 100px;
+}
+
+.category-section__title {
+    font-size: var(--font-size-large);
+}
+
+.judul-meal {
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.429);
+    height: 100%;
+    border-radius: 10px;
+}
+
+.list-group-item {
+    position: relative;
+    border-radius: 20px;
+
+}
+
+.list-group-item img {
+    position: relative;
+    border-radius: 20px;
+}
+
+
+
+.category-section__list {
+    margin-top: 50px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+
+}
+
+.list-meals {
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+
+
+}
+
+.list-items-meal h2 {
+    margin: 20px 10px 30px 20px;
+    font-size: var(--font-size-large);
+
+}
+
+.list-items-meal {
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.352);
+    display: flex;
+    flex-direction: column;
+}
+
+.list-items-meal img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.list-group-item {
+    justify-content: center;
+    display: flex;
+}
+
+
+.main-content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper-detail__meal {
+    max-width: 680px;
+}
+
+.img-detail-card {
+    width: 100%;
+
+}
+
+iframe {
+    margin-top: 46px;
+    width: 100%;
+}
+
+.meal-detail__recipe ul {
+    margin-left: 20px;
+
+}
+
+.meal-detail__description {
+    margin-top: 50px;
+
+}
+
+.text-instructions {
+    font-size: var(--font-size-medium);
+    line-height: 28px;
+    font-weight: 400;
+    color: #242424;
+    list-style-type: decimal;
+    margin-left: 20px;
+    margin-top: 12px;
+}
+
+
+.text-resep {
+    font-size: var(--font-size-medium);
+    line-height: 28px;
+    font-weight: 400;
+    color: #242424;
+    margin-top: 12px;
+}
+
+.meal-detail__title {
+    margin: 20px 0;
+    font-size: var(--font-size-xxlarge);
+}
+
+.judul-instructions,
+.meal-detail__recipe-title {
+    margin: 24px 0;
+    font-size: var(--font-size-large);
+}
+
+
+@media screen and (min-width: 768px) {
+    .category-section__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .list-meals {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .category-section__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .list-meals {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .judul-home__MealApp h1 {
+        font-size: var(--font-size-xxlarge);
+
+    }
+
+    .judul-home__MealApp p {
+        width: 50%;
+        font-size: var(--font-size-large);
+
+    }
+
+    .category-section__title {
+        text-align: center;
+        font-size: var(--font-size-xlarge);
+    }
+
+    .list-meals {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+
+    }
+
+    .category-detail__meals-list {
+        margin-top: 50px;
+    }
+
+    .category-detail__title {
+        font-size: var(--font-size-xlarge);
+
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .nav__list {
+        top: 0;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        background-color: #ffffff;
+        transition: transform 5s ease-in-out;
+        box-shadow: none;
+        transform: translateY(0%);
+    }
+
+    .category-section {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1100px;
+
+    }
+
+
+    .wrapper-Category__detail {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1100px;
+
+    }
+
+
+
+}

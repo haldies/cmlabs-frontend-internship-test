@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz@8..60&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Category Detail</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html"><h1 class="header__title">MealApp</h1></a>
+        <nav class="nav">
+            <ul class="nav__list" role="navigation">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html" class="nav__link">Foods</a></li>
+                <li class="nav__item"><a href="index.html" class="nav__link">Ingredients</a></li>
+                <li class="nav__item"><a href="index.html" class="nav__link">Local Culinary</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu" id="hamburger-menu" aria-label="Toggle Navigation Menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+    <main class="main-content">
+        <section class="wrapper-Category__detail margin-mobile">
+            <div class="category-detail">
+                <h2 id="judulCategoryDetail" class="category-detail__title"></h2>
+                <div id="meals-list" class="category-detail__meals-list list-meals"></div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app-detail.js"></script>
+</body>
+</html>

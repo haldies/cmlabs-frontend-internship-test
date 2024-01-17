@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Indulge in tranquility with delicious meal recipes. Find simplicity and tastiness in our recipes.">
+    <meta name="keywords" content="meal, recipe, food, culinary, ingredients">
+    <meta name="author" content="haldies">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz@8..60&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>MealApp</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <h1 class="header__title">MealApp</h1>
+        </a>
+        <nav class="nav" role="navigation">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html" class="nav__link">Foods</a></li>
+                <li class="nav__item"><a href="index.html" class="nav__link">Ingredients</a></li>
+                <li class="nav__item"><a href="index.html" class="nav__link">Local Culinary</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu" id="hamburger-menu" aria-label="Toggle Navigation Menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+    <main class="main-content">
+        <section class="content-wrapper">
+            <div class="judul-home__MealApp">
+                <div>
+                    <h1>Indulge in Tranquility with</h1>
+                </div>
+                <div>
+                    <h1> Meal Recipes</h1>
+                </div>
+                <p>
+                    Find tranquility through preparation and presentation of delicious meals. With simple yet tasty meal
+                    recipes.
+                </p>
+            </div>
+            <div class="category-section margin-mobile">
+                <h2 class="category-section__title">Meal Categories</h2>
+                <div id="categories-list" class="list-group-card category-section__list"></div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

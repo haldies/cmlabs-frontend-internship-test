@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz@8..60&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Meal Detail</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <h1 class="header__title">MealApp</h1>
+        </a>
+        <nav class="nav" role="navigation">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html" class="nav__link">Foods</a></li>
+                <li class="nav__item"><a href="index.html" class="nav__link">Ingredients</a></li>
+                <li class="nav__item"><a href="index.html" class="nav__link">Local Culinary</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu" id="hamburger-menu" aria-label="Toggle Navigation Menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+    <main class="main-content">
+        <section class="wrapper-detail__meal margin-mobile">
+            <article class="meal-detail">
+                <h2 class="meal-detail__title text-center" id="meal-title"></h2>
+                <figure>
+                    <img src="" alt="" class="meal-detail__image img-detail-card" id="meal-image">
+                </figure>
+                <h1 class="judul-instructions">Instructions</h1>
+                <p class="meal-detail__description " id="meal-description"></p>
+                <h4 class="meal-detail__recipe-title judul-instructions">Recipe:</h4>
+                <div class="meal-detail__recipe" id="meal-recipe"></div>
+                <div class="meal-detail__youtube mt-3" id="youtube-embed"></div>
+            </article>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app-meal-detail.js"></script>
+</body>
+
+</html>
